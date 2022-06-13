@@ -130,7 +130,15 @@ namespace Hello
                 Console.WriteLine($"Lastvalue is now {lastValue}");
             }
 
+            //Working with Files and Directories 
+            FileSystem.listDirectories("obj");
+            FileSystem.listAllContents("obj", "*.json");
+            Console.WriteLine(FileSystem.getFileInfo("Person.cs"));
+            FileSystem.addDirectoryAndFile("bigjara", "intro.txt", "a");
+
         }
     }
+
+
 }
 
